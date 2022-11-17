@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+a {
+  @apply text-blue-500 transition-all hover:text-blue-400 hover:underline;
+}
+
+button {
+  @apply w-min whitespace-nowrap rounded-full py-2 px-6 shadow-sm transition-[filter] duration-300;
+
+  &:hover {
+    @apply brightness-90;
+  }
+
+  &:active {
+    @apply brightness-75;
+  }
+
+  &[size="large"] {
+    @apply py-3 px-12 text-xl;
+  }
+}
+
+.fadein {
+  animation-name: fadein;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+    transform: translateY(-2rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
