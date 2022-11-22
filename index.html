@@ -10,20 +10,26 @@
   <body>
     <nav class="max-and-center filter-white">
       <img src="/assets/images/logo.svg" alt="Logo" />
-      <ul>
-        <li>Shop</li>
+      <ul class="text-medium">
         <li>About us</li>
       </ul>
     </nav>
     <main>
       <section class="hero">
         <div class="max-and-center">
-          <div class="small-container vertical-items fadein">
-            <h1>The award-winning menstrual cup</h1>
-            <p class="large-text">
+          <div class="small-container vertical-items fadein z-10 relative">
+            <img
+              src="/assets/images/box.png"
+              alt="Product in box"
+              class="product"
+            />
+            <h1 class="text-shadow">The award-winning menstrual cup</h1>
+            <p class="large-text text-shadow">
               Easier, healthier, greener - month after month.
             </p>
-            <button type="button" class="large brown">Read more</button>
+            <a href="#product">
+              <button type="button" class="large brown">Read more</button>
+            </a>
           </div>
         </div>
 
@@ -40,7 +46,7 @@
         </div>
       </section>
 
-      <section class="bg-platinum">
+      <section class="bg-platinum" id="product">
         <div class="max-and-center">
           <div class="product-display">
             <div class="media-display">
@@ -138,11 +144,16 @@
         </div>
       </section>
 
-      <section class="bg-platinum-dark">
+      <section class="bg-platinum-dark relative overflow-hidden">
         <div class="max-and-center small text-xl text-center text-forest">
-          The little things you do daily can have a big impact on our planet –
+          The little things you do daily can have a big impact on our planet -
           our products are made with that in mind. <b>It AllMatters.</b>
         </div>
+        <img
+          src="/assets/images/grapefruit.svg"
+          alt="Grapefruit"
+          class="grapefruit"
+        />
       </section>
 
       <section class="bg-platinum flex flex-col gap-2xl">
@@ -157,8 +168,12 @@
           </p>
         </div>
 
-        <div class="max-and-center text-center bg-forest" style="height: 30rem">
-          ...
+        <div class="max-and-center">
+          <video
+            src="/assets/videos/30sec-video.mp4"
+            controls
+            class="w-full"
+          ></video>
         </div>
       </section>
 
