@@ -2,45 +2,196 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/index.css" />
   </head>
   <body>
+    <nav class="max-and-center filter-white">
+      <img src="/assets/images/logo.svg" alt="Logo" />
+      <ul>
+        <li>Shop</li>
+        <li>About us</li>
+      </ul>
+    </nav>
     <main>
-      <header class="sticky -mb-24 flex w-full bg-transparent p-4">
-        <div
-          class="mx-auto flex h-16 w-full max-w-screen-xl items-center justify-between gap-x-4 brightness-0 invert"
-        >
-          <img src="./src/assets/logo.svg" alt="Logo" class="h-full" />
-          <ul class="flex gap-x-4 text-lg font-medium">
-            <li>Shop</li>
-            <li>About us</li>
-            <li>Contact</li>
-          </ul>
-        </div>
-      </header>
-      <section class="h-screen w-full bg-brand-green px-10 text-white">
-        <div class="mx-auto flex h-full max-w-screen-xl items-center">
-          <div class="fadein flex max-w-screen-md flex-col gap-y-8 opacity-0">
-            <h1 class="text-7xl font-extrabold">
-              The award-winning menstrual cup
-            </h1>
-            <h2 class="text-2xl">
+      <section class="hero">
+        <div class="max-and-center">
+          <div class="small-container vertical-items fadein">
+            <h1>The award-winning menstrual cup</h1>
+            <p class="large-text">
               Easier, healthier, greener - month after month.
-            </h2>
-            <button
-              type="button"
-              class="bg-brand-brown text-black"
-              size="large"
-            >
-              Buy it here
-            </button>
+            </p>
+            <button type="button" class="large brown">Read more</button>
+          </div>
+        </div>
+
+        <div class="image flex-col flex">
+          <img
+            class="bounce"
+            src="/assets/images/squeezing-grapefruit-1.png"
+            alt="Hand squeezing grapefruit juice into cup"
+          />
+          <img
+            src="/assets/images/squeezing-grapefruit-2.png"
+            alt="Hand squeezing grapefruit juice into cup"
+          />
+        </div>
+      </section>
+
+      <section class="bg-platinum">
+        <div class="max-and-center">
+          <div class="product-display">
+            <div class="media-display">
+              <div>
+                <img
+                  src="/assets/images/product-display.jpg"
+                  alt="Menstrual cup next to cut grapefruit"
+                />
+              </div>
+              <div>
+                <img
+                  src="/assets/images/product-display-2.jpg"
+                  alt="Menstrual cup placed on package pouch"
+                />
+              </div>
+              <div class="tall">
+                <video
+                  loop="true"
+                  autoplay="autoplay"
+                  controls
+                  muted
+                  playsinline
+                  src="/assets/videos/squeezing.mp4"
+                ></video>
+              </div>
+            </div>
+
+            <div class="product-details">
+              <h1>Menstrual Cup</h1>
+              <div class="text-xl">
+                €24,00 EUR <span class="text-small">incl. shipping</span>
+              </div>
+
+              <p class="text-large">
+                The award-winning AllMatters menstrual cup (formerly OrganiCup)
+                replaces pads and tampons. Easy, healthy, green.
+              </p>
+
+              <div></div>
+
+              <button class="forest large w-full" type="button">
+                Add to cart
+              </button>
+
+              <div
+                class="justify-center flex gap-small relative overflow-hidden"
+              >
+                <img src="/assets/images/leaf.svg" class="svg" alt="Leaf" />
+                <div class="">Ships in plastic-free packaging</div>
+              </div>
+
+              <div></div>
+
+              <div class="reasons">
+                <div>
+                  <img src="/assets/images/icons/AllergyCertified.svg" alt="" />
+                  <div>No allergens found by AllergyCertified</div>
+                </div>
+
+                <div>
+                  <img src="/assets/images/icons/12hrs.svg" alt="" />
+                  <div>Wear for up to 12 hours, without worries</div>
+                </div>
+
+                <div>
+                  <img src="/assets/images/icons/Vegan.svg" alt="" />
+                  <div>Registered with The Vegan Society</div>
+                </div>
+
+                <div>
+                  <img src="/assets/images/icons/satisfaction.svg" alt="" />
+                  <div>Try risk-free with our Satisfaction Guarantee</div>
+                </div>
+
+                <div>
+                  <img src="/assets/images/icons/green.svg" alt="" />
+                  <div>Lasts for years, avoiding constant waste</div>
+                </div>
+
+                <div>
+                  <img src="/assets/images/icons/cup.svg" alt="" />
+                  <div>Made of 100% soft medical-grade silicone</div>
+                </div>
+              </div>
+
+              <div></div>
+
+              <p>
+                We offer a free size replacement or a full refund, if the cup
+                doesn't work as promised. You can claim the guarantee after
+                you've tried it out for 3 cycles (90 days). <a>Learn more.</a>
+              </p>
+            </div>
           </div>
         </div>
       </section>
-      <section></section>
+
+      <section class="bg-platinum-dark">
+        <div class="max-and-center small text-xl text-center text-forest">
+          The little things you do daily can have a big impact on our planet –
+          our products are made with that in mind. <b>It AllMatters.</b>
+        </div>
+      </section>
+
+      <section class="bg-platinum flex flex-col gap-2xl">
+        <div
+          class="max-and-center text-center text-forest small flex flex-col gap text-large"
+        >
+          <h1 class="text-2xl">Doing business for good</h1>
+          <p>
+            Ever since the start, our goal has been to unfold a #NewPeriod of
+            periods - making them easier, healthier, greener for half the
+            world's population.
+          </p>
+        </div>
+
+        <div class="max-and-center text-center bg-forest" style="height: 30rem">
+          ...
+        </div>
+      </section>
+
+      <footer class="bg-forest text-white">
+        <div class="max-and-center">
+          <img src="/assets/images/logo.svg" alt="Logo" class="filter-white" />
+          <ul>
+            <li class="text-large"><b>Help</b></li>
+            <li>FAQ</li>
+            <li>Contact</li>
+            <li>Store Locator</li>
+            <li>Orders & Shipping</li>
+            <li>Satisfaction Guarantee</li>
+            <li>Guides</li>
+          </ul>
+
+          <ul>
+            <li class="text-large"><b>Company</b></li>
+            <li>About Us</li>
+            <li>Our Impact</li>
+            <li>Wholesale Inquiries</li>
+            <li>Blog</li>
+          </ul>
+
+          <ul>
+            <li class="text-large"><b>Follow</b></li>
+            <li>Facebook</li>
+            <li>Instagram</li>
+            <li>Twitter</li>
+            <li>YouTube</li>
+          </ul>
+        </div>
+      </footer>
     </main>
-    <script type="module" src="./src/main.js"></script>
   </body>
 </html>
